@@ -4,8 +4,8 @@ import styled from "styled-components"
 
 const DemoText = styled.h1`
     font-family: ${(props) => props.fontFamily};
-    font-size: ${(props) => props.fontSize}em;
-    background-size: ${(props) => props.textureSize}em;
+    font-size: ${(props) => props.fontSize}px;
+    background-size: ${(props) => props.textureSize}px;
     background-image: url(${(props) => props.background});
     background-clip: text;
     -webkit-background-clip: text;
@@ -59,107 +59,123 @@ function App() {
     // create css button
 
     return (
-        <main>
-            <div className="wrapper">
-                <div className="fontStyle-pre">
-                    <DemoText
-                        fontSize={fontSize}
-                        textureSize={textureSize}
-                        background={background}
-                        fontFamily={fontFamily}
-                    >
-                        {text}
-                    </DemoText>
-                </div>
-                <form>
-                    <h2 id="pre" className="fontStyle-1">
-                        Font Texture
-                    </h2>
-                    <label>
-                        The text you want
-                        <input type="text" value={text} onChange={updateText} />
-                    </label>
-                    <label>
-                        Font family:
-                        <input
-                            name="fontFamily"
-                            list="fontFamily"
-                            type="text"
-                            value={fontFamily}
-                            onChange={updateFontFamily}
-                        />
-                    </label>
-                    <datalist id="fontFamily">
-                        <option value="arial"></option>
-                        <option value="Poppins"></option>
-                        <option value="Impact"></option>
-                    </datalist>
-                    <label>
-                        Font size:
-                        <input
-                            type="text"
-                            value={fontSize}
-                            onChange={updateFontSize}
-                        />
-                        <input
-                            type="range"
-                            value={fontSize}
-                            onChange={updateFontSize}
-                        ></input>
-                    </label>
-                    <label>
-                        Background image url:
-                        <input
-                            type="text"
-                            placeholder="Background texture .fx a url"
-                            value={background}
-                            onChange={updateBackground}
-                        />
-                    </label>
-                    <label>
-                        Background image size:
-                        <input
-                            type="text"
-                            value={textureSize}
-                            onChange={updateTextureSize}
-                        />
-                        <input
-                            type="range"
-                            value={textureSize}
-                            onChange={updateTextureSize}
-                        ></input>
-                    </label>
+        <>
+            <main>
+                <div className="wrapper">
+                    <div className="fontStyle-pre">
+                        <DemoText
+                            fontSize={fontSize}
+                            textureSize={textureSize}
+                            background={background}
+                            fontFamily={fontFamily}
+                        >
+                            {text}
+                        </DemoText>
+                    </div>
+                    <form>
+                        <h2 id="pre" className="fontStyle-1">
+                            Font Texture
+                        </h2>
+                        <label>
+                            The text you want
+                            <input
+                                type="text"
+                                value={text}
+                                onChange={updateText}
+                            />
+                        </label>
+                        <label>
+                            Font family:
+                            <input
+                                name="fontFamily"
+                                list="fontFamily"
+                                type="text"
+                                value={fontFamily}
+                                onChange={updateFontFamily}
+                            />
+                        </label>
+                        <datalist id="fontFamily">
+                            <option value="arial"></option>
+                            <option value="Poppins"></option>
+                            <option value="Impact"></option>
+                        </datalist>
+                        <label>
+                            Font size:
+                            <input
+                                type="text"
+                                value={fontSize}
+                                onChange={updateFontSize}
+                            />
+                            <input
+                                type="range"
+                                value={fontSize}
+                                onChange={updateFontSize}
+                                max="300"
+                            ></input>
+                        </label>
+                        <label>
+                            Background image url:
+                            <input
+                                type="text"
+                                placeholder="Background texture .fx a url"
+                                value={background}
+                                onChange={updateBackground}
+                            />
+                        </label>
+                        <label>
+                            Background image size:
+                            <input
+                                type="text"
+                                value={textureSize}
+                                onChange={updateTextureSize}
+                            />
+                            <input
+                                type="range"
+                                value={textureSize}
+                                onChange={updateTextureSize}
+                                max="1000"
+                            ></input>
+                        </label>
 
-                    {/* <input
+                        {/* <input
                         type="text"
                         value={textureSizeType}
                         onChange={updateTextureSizeType}
                     /> */}
-                    <button disabled title="inputs not complete">
-                        Create css
-                    </button>
-                    <label>
-                        image preview:
-                        <img src={background} />
-                    </label>
-                    <div>
-                        <h3>Share on</h3>
-                        <div>
-                            <p>
-                                <i className="fa-brands fa-facebook"></i>{" "}
-                                Facebook
-                            </p>
-                            <p>
-                                <i className="fa-brands fa-twitter"></i> twitter
-                            </p>
-                            <p>
-                                <i className="fa-brands fa-discord"></i> discord
-                            </p>
+                        <button disabled title="inputs not complete">
+                            Create css
+                        </button>
+                        <label>
+                            image preview:
+                            <img src={background} />
+                        </label>
+                        <div className="links">
+                            <div>
+                                <h3>Share on</h3>
+                                <p>
+                                    <i className="fa-brands fa-facebook"></i>{" "}
+                                    Facebook
+                                </p>
+                                <p>
+                                    <i className="fa-brands fa-twitter"></i>{" "}
+                                    twitter
+                                </p>
+                                <p>
+                                    <i className="fa-brands fa-discord"></i>{" "}
+                                    discord
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-        </main>
+                    </form>
+                </div>
+            </main>
+            <footer>
+                <p>
+                    <b>_</b> Made By:{" "}
+                    <a href="https://lolerswager.com">Jannick Vanderhoef</a>
+                </p>
+            </footer>
+        </>
     )
 }
 
