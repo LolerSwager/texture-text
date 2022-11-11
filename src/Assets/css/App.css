@@ -40,11 +40,17 @@ body {
   width: 350px;
   font-size: 1em;
 }
-.wrapper form input {
+.wrapper form label {
+  color: #f6f6f6;
+}
+.wrapper form label input {
   width: 100%;
   padding: 0.5em;
   border-radius: 5px;
   font-size: 1em;
+}
+.wrapper form label img {
+  width: 100%;
 }
 .wrapper form button {
   width: 100%;
