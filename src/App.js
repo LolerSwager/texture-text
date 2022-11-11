@@ -3,8 +3,9 @@ import { useState } from "react"
 import styled from "styled-components"
 
 const DemoText = styled.h1`
-    font-size: ${(props) => props.fontSize};
-    background-size: ${(props) => props.textureSize};
+    font-family: ${(props) => props.fontFamily};
+    font-size: ${(props) => props.fontSize}em;
+    background-size: ${(props) => props.textureSize}em;
     background-image: url(${(props) => props.background});
     background-clip: text;
     -webkit-background-clip: text;
@@ -19,8 +20,15 @@ function App() {
         setText(event.target.value)
     }
 
+    // text family
+    const [fontFamily, setFontFamily] = useState("Poppins")
+
+    const updateFontFamily = (event) => {
+        setFontFamily(event.target.value)
+    }
+
     // text size
-    const [fontSize, setFontSize] = useState("8em")
+    const [fontSize, setFontSize] = useState("8")
 
     const updateFontSize = (event) => {
         setFontSize(event.target.value)
@@ -36,7 +44,7 @@ function App() {
     }
 
     // texture size
-    const [textureSize, setTextureSize] = useState("1em")
+    const [textureSize, setTextureSize] = useState("1")
 
     const updateTextureSize = (event) => {
         setTextureSize(event.target.value)
@@ -58,6 +66,7 @@ function App() {
                         fontSize={fontSize}
                         textureSize={textureSize}
                         background={background}
+                        fontFamily={fontFamily}
                     >
                         {text}
                     </DemoText>
@@ -71,12 +80,32 @@ function App() {
                         <input type="text" value={text} onChange={updateText} />
                     </label>
                     <label>
+                        Font family:
+                        <input
+                            name="fontFamily"
+                            list="fontFamily"
+                            type="text"
+                            value={fontFamily}
+                            onChange={updateFontFamily}
+                        />
+                    </label>
+                    <datalist id="fontFamily">
+                        <option value="arial"></option>
+                        <option value="Poppins"></option>
+                        <option value="Impact"></option>
+                    </datalist>
+                    <label>
                         Font size:
                         <input
                             type="text"
                             value={fontSize}
                             onChange={updateFontSize}
                         />
+                        <input
+                            type="range"
+                            value={fontSize}
+                            onChange={updateFontSize}
+                        ></input>
                     </label>
                     <label>
                         Background image url:
@@ -94,7 +123,13 @@ function App() {
                             value={textureSize}
                             onChange={updateTextureSize}
                         />
+                        <input
+                            type="range"
+                            value={textureSize}
+                            onChange={updateTextureSize}
+                        ></input>
                     </label>
+
                     {/* <input
                         type="text"
                         value={textureSizeType}

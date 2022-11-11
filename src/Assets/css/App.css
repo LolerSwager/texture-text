@@ -17,7 +17,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(#FFB5E8, #C5A3FF, #ACE7FF); /*Gives background color to the scrollbar*/
+  background-image: linear-gradient(#ffb5e8, #c5a3ff, #ace7ff); /*Gives background color to the scrollbar*/
+}
+
+::-webkit-slider-thumb {
+  background-image: linear-gradient(#ffb5e8, #c5a3ff, #ace7ff);
 }
 
 body {
@@ -40,7 +44,7 @@ body {
   text-align: center;
 }
 .wrapper form {
-  width: 400px;
+  width: 450px;
   display: inherit;
   flex-direction: column;
   gap: 1rem;
@@ -49,12 +53,18 @@ body {
 }
 .wrapper form label {
   color: #f6f6f6;
+  position: relative;
 }
 .wrapper form label input {
   width: 100%;
   padding: 0.5em;
   border-radius: 5px;
   font-size: 1em;
+}
+.wrapper form label input[type=range] {
+  position: absolute;
+  top: 53px;
+  left: 0;
 }
 .wrapper form label img {
   width: 100%;
@@ -75,6 +85,19 @@ body {
   color: #f6f6f6;
 }
 
+@media only screen and (max-width: 650px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .wrapper form {
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    border: none;
+  }
+}
 .fontStyle-1 {
   background: url("../images/texture/crystal.jpg");
   background-size: 4em;
