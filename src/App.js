@@ -79,7 +79,7 @@ function App() {
                         />
                     </label>
                     <label>
-                        Background url:
+                        Background image url:
                         <input
                             type="text"
                             placeholder="Background texture .fx a url"
@@ -104,7 +104,7 @@ function App() {
                         Create css
                     </button>
                     <label>
-                        image prewiew:
+                        image preview:
                         <img src={background} />
                     </label>
                     <div>
