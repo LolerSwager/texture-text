@@ -1,0 +1,184 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$active: #006c43;
+$backgroundcolor: #202020;
+
+:root {
+    --Font-size: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: $backgroundcolor;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    min-height: 20vh;
+    .fontStyle-pre {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            text-align: center;
+        }
+    }
+    form {
+        display: inherit;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0 0 1rem;
+        border-left: 1px solid #000000;
+        width: 350px;
+        font-size: 1em;
+        input {
+            width: 100%;
+            padding: 0.5em;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            width: 100%;
+            padding: 0.5em;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 1em;
+            &:hover {
+                background-color: $active;
+                background: url("../images/rainbowrain.jpg");
+                background-size: 25em;
+            }
+        }
+        div {
+            color: #f6f6f6;
+        }
+    }
+}
+
+.fontStyle-1 {
+    background: url("../images/texture/crystal.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fontStyle-2 {
+    background: url("../images/texture/fure.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fontStyle-3 {
+    background: url("../images/texture/purplelatex.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-4 {
+    background: url("../images/texture/ballon.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-5 {
+    background: url("../images/texture/pinklatex.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-6 {
+    background: url("../images/texture/oillatex.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-7 {
+    background: url("../images/texture/red.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-8 {
+    background: url("../images/texture/heart.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-9 {
+    background: url("../images/texture/rings.jpg");
+    background-size: 8em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-10 {
+    background: url("../images/texture/pink.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-11 {
+    background: url("../images/texture/purpleweed.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-12 {
+    background: url("../images/texture/rainbowsmoke.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-13 {
+    background: url("../images/texture/lightpurplerose.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-14 {
+    background: url("../images/texture/darkpurplerose.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-15 {
+    background: url("../images/texture/purpletransperentballon.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-16 {
+    background: url("../images/texture/purplesparkel.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-17 {
+    background: url("../images/texture/rainbowrain.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-18 {
+    background: url("../images/texture/candyrainbow.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fontStyle-19 {
+    background: url("../images/texture/cottonpink.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
