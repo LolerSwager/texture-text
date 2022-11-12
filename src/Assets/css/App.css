@@ -39,6 +39,7 @@ body {
 .wrapper .fontStyle-pre {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -65,7 +66,7 @@ body {
 }
 .wrapper form label input[type=range] {
   position: absolute;
-  top: 53px;
+  bottom: -14px;
   left: 0;
 }
 .wrapper form label img {
@@ -76,15 +77,41 @@ body {
   padding: 0.5em;
   border-radius: 5px;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.1em;
+  border: 0;
 }
 .wrapper form button:hover {
   background-color: #006c43;
   background: url("../images/rainbowrain.jpg");
   background-size: 25em;
+  color: #000000;
 }
 .wrapper form div {
   color: #f6f6f6;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+.links div a {
+  color: #f6f6f6;
+  text-decoration: none;
+}
+.links div a p i {
+  margin: 0 0.5rem 0 0;
+}
+.links div a p:hover .fa-facebook {
+  color: #4267b2;
+}
+.links div a p:hover .fa-twitter {
+  color: #1da1f2;
+}
+.links div a p:hover .fa-discord {
+  color: #7289da;
+}
+.links div a p:hover .fa-square-up-right {
+  color: #aa1519;
 }
 
 footer {

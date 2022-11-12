@@ -28,7 +28,7 @@ function App() {
     }
 
     // text size
-    const [fontSize, setFontSize] = useState("8")
+    const [fontSize, setFontSize] = useState("100")
 
     const updateFontSize = (event) => {
         setFontSize(event.target.value)
@@ -44,7 +44,7 @@ function App() {
     }
 
     // texture size
-    const [textureSize, setTextureSize] = useState("1")
+    const [textureSize, setTextureSize] = useState("150")
 
     const updateTextureSize = (event) => {
         setTextureSize(event.target.value)
@@ -71,6 +71,17 @@ function App() {
                         >
                             {text}
                         </DemoText>
+                        {/* <pre>
+                            <code>
+                                font-family: {fontFamily};
+                                font-size: {fontSize}px;
+                                background-size: {textureSize}px;
+                                background-image: url({background});
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                            </code>
+                        </pre> */}
                     </div>
                     <form>
                         <h2 id="pre" className="fontStyle-1">
@@ -152,18 +163,46 @@ function App() {
                         <div className="links">
                             <div>
                                 <h3>Share on</h3>
-                                <p>
-                                    <i className="fa-brands fa-facebook"></i>{" "}
-                                    Facebook
-                                </p>
-                                <p>
-                                    <i className="fa-brands fa-twitter"></i>{" "}
-                                    twitter
-                                </p>
-                                <p>
-                                    <i className="fa-brands fa-discord"></i>{" "}
-                                    discord
-                                </p>
+
+                                <a href="#">
+                                    <p>
+                                        <i className="fa-brands fa-facebook"></i>
+                                        Facebook
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p>
+                                        <i className="fa-brands fa-twitter"></i>
+                                        Twitter
+                                    </p>
+                                </a>
+                                <a href="#">
+                                    <p>
+                                        <i className="fa-brands fa-discord"></i>
+                                        Discord
+                                    </p>
+                                </a>
+                            </div>
+                            <div>
+                                <h3>Our link:</h3>
+                                <a
+                                    href="https://lolerswager.com"
+                                    target="_blank"
+                                >
+                                    <p>
+                                        <i class="fa-solid fa-square-up-right"></i>
+                                        Lolerswager
+                                    </p>
+                                </a>
+                                <a
+                                    href="https://discord.com/invite/uaCRvZU"
+                                    target="_blank"
+                                >
+                                    <p>
+                                        <i className="fa-brands fa-discord"></i>
+                                        Discord
+                                    </p>
+                                </a>
                             </div>
                         </div>
                     </form>
