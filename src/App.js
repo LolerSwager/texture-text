@@ -158,7 +158,7 @@ function App() {
                         </button>
                         <label>
                             image preview:
-                            <img src={background} />
+                            <img src={background} alt="preview image" />
                         </label>
                         <div className="links">
                             <div>
@@ -210,7 +210,7 @@ function App() {
             </main>
             <footer>
                 <p>
-                    <b>_</b> Made By:{" "}
+                    <b>_</b> Made By:
                     <a href="https://lolerswager.com">Jannick Vanderhoef</a>
                 </p>
             </footer>

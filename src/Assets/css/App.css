@@ -153,146 +153,112 @@ footer a {
   -webkit-text-fill-color: transparent;
 }
 
-.fontStyle-2 {
-  background: url("../images/texture/fure.jpg");
-  background-size: 4em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+/* .fontStyle-2 {
+    background: url("../images/texture/fure.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fontStyle-3 {
-  background: url("../images/texture/purplelatex.jpg");
-  background-size: 4em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/purplelatex.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-4 {
-  background: url("../images/texture/ballon.jpg");
-  background-size: 4em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/ballon.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-5 {
-  background: url("../images/texture/pinklatex.jpg");
-  background-size: 4em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/pinklatex.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-6 {
-  background: url("../images/texture/oillatex.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/oillatex.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-7 {
-  background: url("../images/texture/red.jpg");
-  background-size: 4em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/red.jpg");
+    background-size: 4em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-8 {
-  background: url("../images/texture/heart.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/heart.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-9 {
-  background: url("../images/texture/rings.jpg");
-  background-size: 8em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/rings.jpg");
+    background-size: 8em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-10 {
-  background: url("../images/texture/pink.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/pink.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-11 {
-  background: url("../images/texture/purpleweed.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/purpleweed.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-12 {
-  background: url("../images/texture/rainbowsmoke.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/rainbowsmoke.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-13 {
-  background: url("../images/texture/lightpurplerose.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/lightpurplerose.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-14 {
-  background: url("../images/texture/darkpurplerose.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/darkpurplerose.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-15 {
-  background: url("../images/texture/purpletransperentballon.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/purpletransperentballon.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-16 {
-  background: url("../images/texture/purplesparkel.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/purplesparkel.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-17 {
-  background: url("../images/texture/rainbowrain.jpg");
-  background-size: 2em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/rainbowrain.jpg");
+    background-size: 2em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-18 {
-  background: url("../images/texture/candyrainbow.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background: url("../images/texture/candyrainbow.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
 .fontStyle-19 {
-  background: url("../images/texture/cottonpink.jpg");
-  background-size: 1em;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}/*# sourceMappingURL=App.css.map */
+    background: url("../images/texture/cottonpink.jpg");
+    background-size: 1em;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+} *//*# sourceMappingURL=App.css.map */
